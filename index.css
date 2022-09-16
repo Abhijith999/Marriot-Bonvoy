@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+  }
+  
+  header {
+    width: 100%;
+    border: 1px solid red;
+  }
+  header #div1 {
+    width: 100%;
+    height: 5px;
+    background-color: black;
+  }
+  header #div2 {
+    width: 100%;
+    height: 100%;
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: row;
+  }
+  header #hamburger_menu {
+    width: 5%;
+    height: auto;
+    border: 1px solid palevioletred;
+    position: relative;
+  }
+  header #hamburger_menu i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  header #image_container {
+    width: 15%;
+  }
+  header #nav_links {
+    width: 75%;
+  }
+  header #nav_links #links1 {
+    padding: 20px 0 20px 0;
+  }
+  header #nav_links #links1 ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  header #nav_links #links1 ul li {
+    list-style: none;
+    margin: 0 2% 0 2%;
+  }
+  header #nav_links #links1 ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+  }
+  header #nav_links #links1 ul li a :hover {
+    text-decoration: underline;
+  }
+  header #nav_links #links2 ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  header #nav_links #links2 ul li {
+    list-style: none;
+    margin: 0 1% 0 1%;
+  }
+  header #nav_links #links2 ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+  }
+  header #nav_links #links2 ul li a :hover {
+    text-decoration: underline;
+  }
+  header #nav_links > nav {
+    width: 100%;
+  }
+  header #blank_div {
+    width: 5%;
+    height: auto;
+    border: 1px solid brown;
+  }
+  
+  @media only screen and (max-width: 992px) {
+    #links2 {
+      display: none;
+      border: none;
+    }
+    #nav_links {
+      position: relative;
+    }
+    #links1 {
+      border: none;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    #links1 ul li a {
+      margin: 0 3% 0 3%;
+    }
+    #links1 ul li a span:last-child {
+      display: none;
+    }
+    #blank_div {
+      display: none;
+    }
+    #hamburger_menu {
+      width: 10%;
+    }
+    #image_container {
+      width: 20%;
+    }
+    #nav_links {
+      width: 70%;
+    }
+  }
+  @media only screen and (min-width: 993px) {
+    #hamburger_menu i {
+      display: none;
+    }
+  }/*# sourceMappingURL=Main.css.map */
